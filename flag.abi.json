@@ -1,0 +1,53 @@
+[
+  {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "address" }],
+    "name": "captured",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "braggingRights", "type": "bytes32" }],
+    "name": "capture",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "sneakUpOn",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "who", "type": "address" },
+      { "indexed": false, "name": "howMuch", "type": "uint256" }
+    ],
+    "name": "LogSneakedUpOn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "who", "type": "address" },
+      { "indexed": false, "name": "braggingRights", "type": "bytes32" }
+    ],
+    "name": "LogCaptured",
+    "type": "event"
+  }
+]
